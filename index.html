@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Weather App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="relative min-h-screen overflow-hidden flex items-center justify-center p-4 transition-all">
+
+  <video id="bgVideo" autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+    <source src="videos/Weather.mp4" type="video/mp4">
+  </video>
+
+  <div class="backdrop-blur-xl bg-white/60 border border-white/30 shadow-2xl rounded-3xl p-6 w-full max-w-xl text-gray-800 transition-all duration-500">
+    <div class="flex justify-between items-center mb-4">
+      <h1 class="text-3xl font-bold text-center w-full">🌦️ Weather App</h1>
+      <button id="toggleModeBtn" class="ml-auto text-lg"><i data-lucide="moon"></i></button>
+    </div>
+
+    <div class="flex flex-wrap sm:flex-row items-center gap-3 mb-6">
+      <input id="cityInput" type="text" placeholder="Search city/Country..."
+        class="flex-1 px-4 py-3 rounded-lg border border-gray-300 
+               bg-white text-green-700 placeholder-green-500 
+               focus:ring-2 focus:ring-green-500 outline-none transition-all w-full sm:w-auto">
+
+      <button id="voiceBtn" title="Voice Search"
+        class="px-4 py-3 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 transition duration-300">
+        <i data-lucide="mic"></i>
+      </button>
+
+      <button id="getWeatherBtn" title="Search"
+        class="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg hover:scale-105 transition duration-300 shadow-md">
+        <i data-lucide="search" class="inline-block w-4 h-4 mr-1"></i>Search
+      </button>
+
+      <button id="refreshBtn" title="Refresh Weather"
+        class="px-4 py-3 text-white bg-gray-700 hover:bg-gray-600 rounded-lg shadow-md transition duration-300">
+        <i data-lucide="refresh-ccw" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div id="loading" class="hidden text-center">
+      <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 mx-auto"></div>
+      <p class="text-gray-600 mt-2">Fetching weather...</p>
+    </div>
+
+    <div id="weatherResult" class="hidden text-center space-y-3 fade-in"></div>
+
+    <div id="forecastTabs" class="mt-6 hidden"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+<footer class="w-full fixed bottom-0 left-0 z-50 
+  bg-[#111827] text-gray-200 text-sm px-6 py-3 
+  flex flex-wrap items-center justify-center gap-4 
+  shadow-[0_-1px_6px_rgba(0,0,0,0.4)]">
+
+  <span>
+    Developed by 
+    <a href="https://noor-malik-portfolio.netlify.app/" target="_blank"
+       class="font-semibold text-green-400 hover:text-green-300 transition">
+      Noor Malik
+    </a>
+  </span>
+
+  <span>|</span>
+
+  <a href="https://www.linkedin.com/in/noormalik56500/" target="_blank"
+     class="flex items-center gap-1 hover:underline text-blue-400 hover:text-blue-300 transition"
+     title="LinkedIn Profile">
+    <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+  </a>
+
+  <span>|</span>
+
+  <a href="https://github.com/noormalik33" target="_blank"
+     class="flex items-center gap-1 hover:underline text-gray-300 hover:text-white transition"
+     title="GitHub Profile">
+    <i data-lucide="github" class="w-4 h-4"></i> GitHub
+  </a>
+
+  <span>|</span>
+
+  <a href="mailto:noormalik56500@gmail.com"
+     class="hover:underline text-pink-400 hover:text-pink-300 transition"
+     title="Email Noor">
+    <i data-lucide="mail" class="w-4 h-4"></i> Email
+  </a>
+</footer>
+</html>

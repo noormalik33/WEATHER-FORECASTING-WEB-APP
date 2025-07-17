@@ -74,6 +74,7 @@ Modify API key if required in app.js.
 
 ## 👩‍💻 Author
 I am Noor Malik, an IT undergraduate, full-stack developer, and cybersecurity enthusiast.
+
 📍 Islamabad, Pakistan
 📧 Email: noormalik56500@gmail.com
 🔗 Portfolio Website

@@ -72,6 +72,16 @@ Ensure you have internet connection (API and voice recognition require it).
 
 Modify API key if required in app.js.
 
+## Contributing 🤝
+Contributions are welcome! Please fork the repository, make changes, and submit a pull request. Report bugs or suggest features via GitHub Issues. 🌟
+Contact 📬
+For questions, feedback, or collaboration, reach out to:
+
+## License 📝
+This project is licensed under the MIT License. See the LICENSE file for details.
+Acknowledgments 🙏
+This simulation was inspired by real-world banking systems and operating system principles. Thanks to the open-source community for providing valuable resources and inspiration! 🎉
+
 ## 👩‍💻 Author
 
 **Noor Malik**  

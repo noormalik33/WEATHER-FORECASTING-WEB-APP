@@ -64,7 +64,7 @@ IDE: VS Code
 
 ## 👨‍💻 How to Run
 Clone the repository:
-git clone https://github.com/noormalik33/weather-forecasting-web-app.git
+git clone (https://github.com/noormalik33/WEATHER-FORECASTING-WEB-APP.git)
 
 Open index.html in a live server (VS Code Live Server or browser).
 

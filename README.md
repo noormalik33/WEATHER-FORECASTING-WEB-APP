@@ -73,12 +73,11 @@ Ensure you have internet connection (API and voice recognition require it).
 Modify API key if required in app.js.
 
 ## 👩‍💻 Author
-I am Noor Malik, an IT undergraduate, full-stack developer, and cybersecurity enthusiast.
 
-📍 Islamabad, Pakistan
-📧 Email: noormalik56500@gmail.com
-🔗 Portfolio Website
-🔗 LinkedIn
-🐙 GitHub
+**Noor Malik**  
+IT Student  
+📍 Islamabad, Pakistan  
+📧 Email: noormalik56500@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/noormalik56500/)
 
 💡 If you like this project, don’t forget to star ⭐ it on GitHub!

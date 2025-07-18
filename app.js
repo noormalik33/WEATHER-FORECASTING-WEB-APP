@@ -148,4 +148,4 @@ toggleModeBtn.addEventListener('click', () => {
     ? '<i data-lucide="sun"></i>'
     : '<i data-lucide="moon"></i>';
   lucide.createIcons();
-});
+}); 

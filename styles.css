@@ -1,0 +1,41 @@
+body {
+  background-image: url('videos/Weather.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background 0.5s ease;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tab {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tab.active {
+  background: rgba(59, 130, 246, 0.8);
+  color: white;
+}
+
+.dark {
+  background-color: #111827;
+  color: #e5e7eb;
+}
